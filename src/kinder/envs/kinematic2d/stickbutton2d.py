@@ -83,7 +83,7 @@ class StickButton2DEnvConfig(Kinematic2DRobotEnvConfig, metaclass=FinalConfigMet
     stick_rgb: tuple[float, float, float] = BROWN
     stick_shape: tuple[float, float] = (robot_base_radius / 2, table_shape[1])
     stick_init_pose_bounds: tuple[SE2Pose, SE2Pose] = (
-        SE2Pose(world_min_x, table_pose.y - stick_shape[1] / 2, 0),
+        SE2Pose(3.435, table_pose.y - stick_shape[1] / 2, 0),
         SE2Pose(world_max_x - stick_shape[0], table_pose.y - stick_shape[1] / 10, 0),
     )
 
